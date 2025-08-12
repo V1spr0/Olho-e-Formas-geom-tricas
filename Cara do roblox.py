@@ -1,52 +1,88 @@
 import turtle as t
+#definindo a velocidade 
+t.speed(100)
 
-t.speed(10)
-t.hideturtle()
+#Fazendo a pupila
 
-# Função para desenhar o olho com pálpebra inclinada
-def desenhar_olho(x, y):
-    # Pupila
-    t.penup()
-    t.goto(x, y)
-    t.pendown()
-    t.pensize(35)
-    t.pencolor("black")
-    t.circle(18)
+t.width(40)
+t.circle(20)
+t.width(1)
+t.pencolor("white")
 
-    # Brilho
-    t.pensize(4)
-    t.pencolor("white")
-    t.penup()
-    t.goto(x + 8, y + 20)
-    t.pendown()
-    t.circle(2)
+t.penup()
+t.left(90)
+t.forward(30)
+t.left(-90)
+t.forward(15)
+t.pendown()
 
-    # Pálpebra superior (mais inclinada)
-    t.pencolor("black")
-    t.pensize(5)
-    t.penup()
-    t.goto(x - 28, y + 32)
-    t.setheading(10)  # ângulo mais agressivo
-    t.pendown()
-    t.forward(56)
+#Fazendo a luz da pupila
 
-# Função para desenhar a boca fina e inclinada
-def desenhar_boca():
-    t.penup()
-    t.goto(-35, -65)
-    t.setheading(5)  # leve inclinação pra direita
-    t.pendown()
-    t.pensize(3)
-    t.pencolor("black")
-    t.forward(70)  # linha reta
-    t.setheading(-60)
-    t.circle(35, 50)  # curvinha no canto
+t.width(5)
+t.circle(2)
+t.width(1)
 
-# Desenhar olhos
-desenhar_olho(-65, 0)  # esquerdo
-desenhar_olho(35, 0)   # direito
+t.penup()
+t.left(90)
+t.forward(33)
+t.left(90)
+t.pendown()
 
-# Desenhar boca
-desenhar_boca()
+#fazendo o olho
 
-t.done()
+t.pencolor("black")
+t.width(5)
+t.forward(100)
+t.left(180)
+t.forward(130)
+t.left(320)
+t.forward(20)
+t.width(4)
+t.forward(10)
+t.width(3)
+t.forward(10)
+t.width(2)
+t.forward(10)
+t.width(1)
+t.forward(10)
+
+t.penup()
+t.left(180)
+t.forward(60)
+t.left(40)
+t.forward(100)
+t.pendown()
+
+
+t.left(50)
+t.width(5)
+t.forward(30)
+t.width(4)
+t.forward(20)
+t.width(3)
+t.forward(20)
+t.left(130)
+t.forward(150)
+t.left(30)
+t.forward(40)
+t.left(240)
+
+t.penup()
+t.forward(50)
+t.left(-90)
+t.pendown()
+
+t.pencolor("white")
+t.width(55)
+t.forward(130)
+t.width(3)
+
+t.penup()
+t.forward(60)
+t.left(-90)
+t.forward(110)
+t.left(-90)
+t.pendown()
+
+t.pencolor("black")
+t.forward(170)
